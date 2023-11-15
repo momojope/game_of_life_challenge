@@ -21,60 +21,60 @@ Ce projet implémente le "Jeu de la Vie" de John Conway en utilisant Python et l
 
 ## Commentaires Codage
 
-# 1. Initialisation de la Grille :
-    - La grille du jeu est une liste bidimensionnelle (matrice) initialisée avec des cellules mortes.
+### 1. Initialisation de la Grille :
+   - La grille du jeu est une liste bidimensionnelle (matrice) initialisée avec des cellules mortes.
 
-# 2. Gestion des Boutons d'Interaction :
-    - Les boutons "Démarrer", "Arrêter", et "Effacer" sont associés à des méthodes pour contrôler le jeu.
-    - Le bouton "Démarrer" bascule entre le démarrage et l'arrêt du jeu.
+### 2. Gestion des Boutons d'Interaction :
+   - Les boutons "Démarrer", "Arrêter", et "Effacer" sont associés à des méthodes pour contrôler le jeu.
+   - Le bouton "Démarrer" bascule entre le démarrage et l'arrêt du jeu.
 
-# 3. Gestion des Clics et Mouvements de Souris :
-    - Les événements de clic et de mouvement de souris sont gérés pour activer et désactiver les cellules.
-    - Les méthodes gerer_clic et gerer_glisser sont appelées en réponse à ces événements.
+### 3. Gestion des Clics et Mouvements de Souris :
+   - Les événements de clic et de mouvement de souris sont gérés pour activer et désactiver les cellules.
+   - Les méthodes gerer_clic et gerer_glisser sont appelées en réponse à ces événements.
 
-# 4. Mise à Jour Continue du Jeu :
-    - La méthode mettre_a_jour utilise les règles du Jeu de la Vie pour mettre à jour la grille de manière continue.
-    - Utilisation de la récursivité avec after de Tkinter pour des mises à jour périodiques.
+### 4. Mise à Jour Continue du Jeu :
+   - La méthode mettre_a_jour utilise les règles du Jeu de la Vie pour mettre à jour la grille de manière continue.
+   - Utilisation de la récursivité avec after de Tkinter pour des mises à jour périodiques.
 
-# 5. Calcul des Voisins :
-    - La méthode obtenir_voisins calcule l'état des huit voisins d'une cellule.
-    - Utilisation d'une double boucle pour explorer les voisins autour de la cellule actuelle.
+### 5. Calcul des Voisins :
+   - La méthode obtenir_voisins calcule l'état des huit voisins d'une cellule.
+   - Utilisation d'une double boucle pour explorer les voisins autour de la cellule actuelle.
 
+### 6. Gestion de la Vitesse de Génération :
+   - Le slider_vitesse est utilisé pour réguler la vitesse de génération du jeu.
+   - La méthode mettre_a_jour_vitesse ajuste la vitesse en fonction de la position du slider.
 
-# 6. Gestion de la Vitesse de Génération :
-    - Le slider_vitesse est utilisé pour réguler la vitesse de génération du jeu.
-    - La méthode mettre_a_jour_vitesse ajuste la vitesse en fonction de la position du slider.
-
-
- # 7. Organisation Orientée Objet :
+### 7. Organisation Orientée Objet :
    - La classe JeuDeLaVie est utilisée pour encapsuler le jeu et ses fonctionnalités.
    - Les méthodes sont regroupées de manière logique, ce qui améliore la lisibilité et la maintenance du code.
 
-# 8. Utilisation de Tkinter pour l'Interface Graphique :
+### 8. Utilisation de Tkinter pour l'Interface Graphique :
    - Tkinter est choisi pour sa simplicité et sa présence standard dans les installations Python.
    - Les widgets Tkinter sont utilisés pour créer une interface utilisateur interactive.
-     
-# 9. Mise à Jour Automatique
-    -La mise à jour du jeu est gérée de manière récursive à l'aide de la méthode `after` de Tkinter, créant ainsi une boucle périodique pour la génération continue.
 
-# 10. Gestion des Événements de Souris :
+### 9. Mise à Jour Automatique :
+   - La mise à jour du jeu est gérée de manière récursive à l'aide de la méthode `after` de Tkinter, créant ainsi une boucle périodique pour la génération continue.
+
+### 10. Gestion des Événements de Souris :
    - La classe JeuDeLaVie réagit aux clics et mouvements de souris pour interagir avec la grille du jeu.
 
-# 11. Utilisation de Tags dans le Canevas :
+### 11. Utilisation de Tags dans le Canevas :
    - Des tags "cellules" et "grille" sont utilisés pour identifier les objets sur le canevas.
    - Facilite la gestion et la suppression des éléments graphiques.
 
-# 12. Délai entre les Mises à Jour :
+### 12. Délai entre les Mises à Jour :
    - Utilisation de la méthode `after` de Tkinter pour planifier des mises à jour périodiques du jeu.
    - La vitesse de mise à jour est réglable via un slider.
-# 13. Utilisation d'une Liste de Compréhension :
+
+### 13. Utilisation d'une Liste de Compréhension :
    - Des listes de compréhension sont utilisées pour initialiser la grille et calculer le nombre de cellules vivantes.
 
-# 14. Personnalisation du Curseur :
+### 14. Personnalisation du Curseur :
    - Le curseur de la souris est modifié lorsqu'il survole le canevas pour une expérience utilisateur améliorée.
 
-# 15. Ajout de Commentaires Détaillés dans Chaque Méthode :
+### 15. Ajout de Commentaires Détaillés dans Chaque Méthode :
    - Chaque méthode est commentée pour expliquer son rôle et son fonctionnement.
+
   
 ## run
 
