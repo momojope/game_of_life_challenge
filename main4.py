@@ -12,7 +12,7 @@ class JeuDeLaVie:
         
         
 
-        #ajout d'' un titre texte
+        #ajout d''un titre texte
         titre_font = font.Font(size=16, weight='bold')
         titre_label = tk.Label(root, text="CHALLENGE ELIAS, Jeu de la Vie de John Conway", font=titre_font)
         titre_label.pack(side=tk.TOP, pady=10)
