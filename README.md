@@ -22,33 +22,33 @@ Ce projet implémente le "Jeu de la Vie" de John Conway en utilisant Python et l
 ## Commentaires Codage
 
 # 1. Initialisation de la Grille :
-#    - La grille du jeu est une liste bidimensionnelle (matrice) initialisée avec des cellules mortes.
+    - La grille du jeu est une liste bidimensionnelle (matrice) initialisée avec des cellules mortes.
 
 # 2. Gestion des Boutons d'Interaction :
-#    - Les boutons "Démarrer", "Arrêter", et "Effacer" sont associés à des méthodes pour contrôler le jeu.
-#    - Le bouton "Démarrer" bascule entre le démarrage et l'arrêt du jeu.
+    - Les boutons "Démarrer", "Arrêter", et "Effacer" sont associés à des méthodes pour contrôler le jeu.
+    - Le bouton "Démarrer" bascule entre le démarrage et l'arrêt du jeu.
 
 # 3. Gestion des Clics et Mouvements de Souris :
-#    - Les événements de clic et de mouvement de souris sont gérés pour activer et désactiver les cellules.
-#    - Les méthodes gerer_clic et gerer_glisser sont appelées en réponse à ces événements.
+    - Les événements de clic et de mouvement de souris sont gérés pour activer et désactiver les cellules.
+    - Les méthodes gerer_clic et gerer_glisser sont appelées en réponse à ces événements.
 
 # 4. Mise à Jour Continue du Jeu :
-#    - La méthode mettre_a_jour utilise les règles du Jeu de la Vie pour mettre à jour la grille de manière continue.
-#    - Utilisation de la récursivité avec after de Tkinter pour des mises à jour périodiques.
+    - La méthode mettre_a_jour utilise les règles du Jeu de la Vie pour mettre à jour la grille de manière continue.
+    - Utilisation de la récursivité avec after de Tkinter pour des mises à jour périodiques.
 
 # 5. Calcul des Voisins :
-#    - La méthode obtenir_voisins calcule l'état des huit voisins d'une cellule.
-#    - Utilisation d'une double boucle pour explorer les voisins autour de la cellule actuelle.
+    - La méthode obtenir_voisins calcule l'état des huit voisins d'une cellule.
+    - Utilisation d'une double boucle pour explorer les voisins autour de la cellule actuelle.
 
 
 # 8. Gestion de la Vitesse de Génération :
-#    - Le slider_vitesse est utilisé pour réguler la vitesse de génération du jeu.
-#    - La méthode mettre_a_jour_vitesse ajuste la vitesse en fonction de la position du slider.
+    - Le slider_vitesse est utilisé pour réguler la vitesse de génération du jeu.
+    - La méthode mettre_a_jour_vitesse ajuste la vitesse en fonction de la position du slider.
 
 
  # 9. Organisation Orientée Objet :
- #  - La classe JeuDeLaVie est utilisée pour encapsuler le jeu et ses fonctionnalités.
- #  - Les méthodes sont regroupées de manière logique, ce qui améliore la lisibilité et la maintenance du code.
+   - La classe JeuDeLaVie est utilisée pour encapsuler le jeu et ses fonctionnalités.
+   - Les méthodes sont regroupées de manière logique, ce qui améliore la lisibilité et la maintenance du code.
 
 # 10. Utilisation de Tkinter pour l'Interface Graphique :
    - Tkinter est choisi pour sa simplicité et sa présence standard dans les installations Python.
